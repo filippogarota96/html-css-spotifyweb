@@ -28,27 +28,36 @@ aside {
   height: 100%;
   width: 220px;
   background-color: #000;
+  overflow: auto;
 }
 
 .logo {
   color: #fff;
   padding: 30px 0;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
 }
 
+.logo h1 {
+  padding-left: 5px;
+}
+.logo i {
+  font-size: 40px;
+}
 .first__nav ul {
   padding-left: 20px;
 }
 
-.playlist h3 {
+.nav-playlist h3 {
   color: #fff;
 }
-.playlist {
+.nav-playlist {
   padding-left: 20px;
   margin: 30px 0;
 }
 
-.new-playlist {
+.new__playlist {
   display: flex;
   align-items: center;
   margin: 20px 0 ;
@@ -60,9 +69,24 @@ aside {
   margin-right: 10px;
 }
 
-.playlist p {
+.nav-playlist p {
   color: #fff;
 }
+
+.playlist__scroll {
+  background-color: grey;
+  height: 180px;
+  overflow: auto;
+}
+
+.profile {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.profile h2 {
+  color: #fff;
+}
+
 .upgrade {
   width: calc(100% - 220px);
   height: 80px;
@@ -71,8 +95,20 @@ aside {
   top:0;
   right: 0;
   z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
+.upgrade__btn {
+  color: #fff;
+  width: 200px;
+  padding: 10px 0 ;
+  margin-right: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 40px;
+}
 
 
 .container {
