@@ -6,7 +6,7 @@
 
 body {
   background-color: #141922;
-  height: 120vh;
+  height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -37,6 +37,7 @@ aside {
   background-color: #000;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .logo img {
@@ -64,8 +65,13 @@ aside {
 .nav-playlist {
   padding-left: 20px;
   margin: 30px 0;
+  overflow: hidden;
 }
 
+.nav-playlist ul {
+  height: 100%;
+  overflow-y: auto;
+}
 .new__playlist {
   display: flex;
   align-items: center;
@@ -91,7 +97,7 @@ aside {
 
 .profile {
   margin-left: 20px;
-  margin-top: 50px;
+
 }
 .profile h2 {
   color: #fff;
