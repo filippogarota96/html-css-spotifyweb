@@ -44,6 +44,11 @@ aside {
   width: 130px;
   margin: 30px 20px;
 }
+#logo__small {
+  width: 40px;
+  margin: 30px 20px;
+  display: none;
+}
 .first-nav ul {
   padding-left: 20px;
 }
@@ -252,8 +257,45 @@ footer {
 /*responsive*/
 
 @media screen and (max-width: 768px)  {
+
+  /* aside */
+
+  aside {
+    width: 10%;
+    position: relative;
+  }
+  .logo img {
+    display: none;
+    margin: none;
+  }
+  #logo__small {
+    display: block;
+    margin: none;
+  }
+
+  aside p,
+  .container-playlist,
+  .profile span,
+  .profile h4 {
+    display: none;
+  }
+
+  .profile {
+    position: absolute;
+    bottom: 0;
+  }
+  .profile a {
+    border: none;
+  }
+
+  .upgrade {
+
+  }
+
+
   .container__nav {
     margin-left: 10px;
+    
   }
   .album__item {
     flex-basis: calc((100% / 2) - 13px);
