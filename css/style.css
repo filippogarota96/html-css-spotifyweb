@@ -6,7 +6,7 @@
 
 body {
   background-color: #141922;
-  height: 100vh;
+  height: 120vh;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -21,6 +21,12 @@ ul {
 
 }
 
+p {
+  font-size: 12px;
+  color: #75777C;
+  font-weight: 600;
+  padding-top: 7px;
+}
 a {
   text-decoration: none;
 }
@@ -29,26 +35,28 @@ aside {
   height: 100%;
   width: 220px;
   background-color: #000;
-  overflow: auto;
-}
-
-.logo {
-  color: #fff;
-  padding: 30px 0;
-  margin-left: 20px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.logo h1 {
-  padding-left: 5px;
+.logo img {
+  width: 130px;
+  margin: 30px 20px;
 }
-.logo i {
-  font-size: 40px;
-}
-.first__nav ul {
+.first-nav ul {
   padding-left: 20px;
 }
+
+.first-nav li {
+  display: flex;
+  padding-bottom: 10px;
+}
+.first-nav li img {
+  max-width: 27px;
+  margin-right: 5px;
+}
+
+
 
 .nav-playlist h3 {
   color: #fff;
@@ -70,15 +78,16 @@ aside {
   margin-right: 10px;
 }
 
-.nav-playlist p {
-  color: #fff;
+.nav-playlist li{
+  padding-top: 10px;
+}
+.nav-playlist a {
+  color: #717171;
+  font-size: 12px;
+  font-weight: 600;
 }
 
-.playlist__scroll {
-  background-color: grey;
-  height: 180px;
-  overflow: auto;
-}
+
 
 .profile {
   margin-left: 20px;
@@ -147,7 +156,7 @@ aside {
 .album__container {
   display: flex;
   margin-top: 30px;
-  width: 100%;
+  max-width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -160,21 +169,15 @@ aside {
 .album__container h3 {
   font-size: 16px;
 }
-p {
-  font-size: 12px;
-  color: #75777C;
-  font-weight: 600;
-  padding-top: 7px;
-}
-
 
 .album__item {
   flex-basis: calc((100% / 6) - 13px);
   text-align: center;
 }
 
-#made-for-flex {
+#made-for__flex {
   justify-content: flex-start;
+
 }
 .suggests {
   margin-top: 50px;
@@ -207,6 +210,9 @@ footer {
     flex-basis: calc((100% / 2) - 13px);
     text-align: center;
     margin-bottom: 20px;
+  }
+  #made-for__flex {
+    flex-wrap: nowrap;
   }
 
 }
