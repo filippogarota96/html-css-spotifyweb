@@ -119,6 +119,9 @@ aside {
   padding-top: 80px;
 }
 
+.container__margin {
+  margin-left: 10px;
+}
 .container__nav {
   display: flex;
   justify-content: center;
@@ -144,25 +147,66 @@ aside {
 .album__container {
   display: flex;
   margin-top: 30px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 .album__container img {
   width: 100%;
+  padding-bottom: 10px;
 }
+.album__container h3 {
+  font-size: 16px;
+}
+p {
+  font-size: 12px;
+  color: #75777C;
+  font-weight: 600;
+  padding-top: 7px;
+}
+
+
 .album__item {
-  width: calc((100% / 6) - 10px);
+  flex-basis: calc((100% / 6) - 13px);
+  text-align: center;
+}
 
-  background-color: red;
-
+#made-for-flex {
+  justify-content: flex-start;
+}
+.suggests {
+  margin-top: 50px;
 }
 /*stile layout del main */
 
+.made-for__item {
+  margin-right: 15px;
+}
 
-
+.item--circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
 footer {
   background-color: #282828;
   height: 80px;
   width: 100%;
   position:fixed;
   bottom: 0;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px)  {
+  .container__nav {
+    margin-left: 10px;
+  }
+  .album__item {
+    flex-basis: calc((100% / 2) - 13px);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
 }
