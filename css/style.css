@@ -58,25 +58,21 @@ aside {
 }
 
 
-
-.nav-playlist h3 {
+.container-playlist h3 {
   color: #fff;
 }
-.nav-playlist {
+.container-playlist {
   padding-left: 20px;
   margin: 30px 0;
+  height: 50%;
   overflow: hidden;
-}
-
-.nav-playlist ul {
-  height: 100%;
-  overflow-y: auto;
 }
 .new__playlist {
   display: flex;
   align-items: center;
   margin: 20px 0 ;
 }
+
 .btn {
   width: 40px;
   height: 40px;
@@ -84,25 +80,71 @@ aside {
   margin-right: 10px;
 }
 
-.nav-playlist li{
+.container-playlist li{
   padding-top: 10px;
 }
-.nav-playlist a {
+.container-playlist a {
   color: #717171;
   font-size: 12px;
   font-weight: 600;
 }
 
+.playlist__scroll  {
+  height: 70%;
+  overflow-y: auto;
+}
 
+/* profile */
 
 .profile {
   margin-left: 20px;
+}
+
+.profile a {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #717171;
+  width: 90%;
+  color: #717171;
+  font-weight: 700;
+  display: block;
+  font-size: 12px;
+}
+
+.profile a i {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 2px;
+  border: 1px solid #717171;
+  border-radius: 50%;
+  font-size: 7px;
+  vertical-align: middle;
+}
+
+
+.profile__account {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
 
 }
-.profile h2 {
+
+.account--image {
+  background-color: #717171;
+  padding: 4px 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.profile__account img {
+  width: 20px;
+}
+
+.profile__account h4 {
   color: #fff;
 }
 
+/* /profile */
+
+/* /aside */
 .upgrade {
   width: calc(100% - 220px);
   height: 80px;
@@ -124,6 +166,7 @@ aside {
   border: 1px solid #fff;
   border-radius: 40px;
   background-color: transparent;
+  display: inline-block;
 }
 
 /*stile layout del main */
