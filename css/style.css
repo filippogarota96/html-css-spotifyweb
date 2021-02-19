@@ -101,14 +101,14 @@ aside {
   align-items: center;
 }
 
-.upgrade__btn {
+.upgrade__btn a {
   color: #fff;
-  width: 200px;
-  padding: 10px 0 ;
+  padding: 12px 40px; ;
   margin-right: 30px;
+  border:none;
   border: 1px solid #fff;
-  text-align: center;
   border-radius: 40px;
+  background-color: transparent;
 }
 
 /*stile layout del main */
