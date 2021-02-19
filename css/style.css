@@ -7,6 +7,7 @@
 body {
   background-color: #141922;
   height: 100vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -110,44 +111,54 @@ aside {
   border-radius: 40px;
 }
 
-
+/*stile layout del main */
 .container {
   color: #fff;
   width: calc(100% - 220px);
   overflow: auto;
   padding-top: 80px;
+}
+
+.container__nav {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.image__container {
-  width: calc(100% / 6);
-  height: 178px;
-  background-color: red;
-  margin: 0 10px;
-
+.container__nav li  {
+  display: inline-block;
+  padding: 20px 10px;
 }
 
+.container__nav a {
+  color: #75777C;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
 
+.container__recently {
+  margin: 40px 20px;
+}
 
-
-.made-for {
-  width: 500px;
-  background: green;
-  margin-top: 50px;
+.album__container {
   display: flex;
-  flex-wrap: wrap;
-
+  margin-top: 30px;
 }
 
-.made-for h2 {
+.album__container img {
   width: 100%;
-  margin-left: 15px;
 }
+.album__item {
+  width: calc((100% / 6) - 10px);
 
-.made-for .image__container {
-  margin-left: 15px;
+  background-color: red;
+
 }
+/*stile layout del main */
+
+
+
 footer {
   background-color: #282828;
   height: 80px;
