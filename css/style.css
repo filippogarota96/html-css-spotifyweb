@@ -256,13 +256,14 @@ footer {
 
 /*responsive*/
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 576px)  {
 
   /* aside */
 
   aside {
-    width: 10%;
+    width: 80px;
     position: relative;
+    text-align: center;
   }
   .logo img {
     display: none;
@@ -272,7 +273,9 @@ footer {
     display: block;
     margin: none;
   }
-
+  .first-nav ul {
+    padding-left: 25px;
+  }
   aside p,
   .container-playlist,
   .profile span,
@@ -286,17 +289,22 @@ footer {
   }
   .profile a {
     border: none;
+    margin-left: 2px;
   }
+
 
   .upgrade {
-
+    width: calc(100% - 80px);
   }
 
+  .container {
+    width: calc(100% - 80px);
+  }
 
   .container__nav {
     margin-left: 10px;
-    
   }
+
   .album__item {
     flex-basis: calc((100% / 2) - 13px);
     text-align: center;
