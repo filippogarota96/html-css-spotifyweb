@@ -187,8 +187,8 @@ aside {
 }
 .container__nav {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container__nav li  {
@@ -210,11 +210,10 @@ aside {
 .album__container {
   display: flex;
   margin-top: 30px;
-  max-width: 100%;
-  justify-content: space-between;
+  width: 100%;
   flex-wrap: wrap;
-
 }
+
 
 .album__container img {
   width: 100%;
@@ -225,7 +224,8 @@ aside {
 }
 
 .album__item {
-  flex-basis: calc((100% / 6) - 13px);
+  flex-basis: calc((100% / 6) - 20px);
+  margin: 0 10px;
   text-align: center;
 }
 
@@ -238,25 +238,40 @@ aside {
 }
 /*stile layout del main */
 
-.made-for__item {
-  margin-right: 15px;
-}
-
 .item--circle {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* stile del piè di pagina */
+
 footer {
   background-color: #282828;
   height: 80px;
   width: 100%;
   position:fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
+.track-container {
+  flex-basis: 23%;
+  background-color: red;
+}
+
+.reproducing-container {
+  flex-basis: 50%;
+  background-color: yellow;
+}
+
+.controls-container {
+  flex-basis: 25%;
+  background-color: red;
+}
 /*responsive*/
 
-@media screen and (max-width: 576px)  {
+@media screen and (max-width: 575px)  {
 
   /* aside */
 
@@ -292,11 +307,12 @@ footer {
     margin-left: 2px;
   }
 
-
+  /* responsive upgrade */
   .upgrade {
     width: calc(100% - 80px);
   }
 
+  /* responsive container */
   .container {
     width: calc(100% - 80px);
   }
@@ -306,12 +322,32 @@ footer {
   }
 
   .album__item {
-    flex-basis: calc((100% / 2) - 13px);
-    text-align: center;
-    margin-bottom: 20px;
+    flex-basis: calc((100% / 2) - 20px);
+  }
+  #made-for__flex {
+    flex-wrap: nowrap;
+  }
+}
+
+
+
+ @media screen and (min-width: 576px) and (max-width: 767px)  {
+  .album__item {
+    flex-basis: calc((100% / 2) - 20px);
+
+  }
+  #made-for__flex {
+    flex-wrap: nowrap;
+  }
+}
+
+  @media screen and (min-width:768px) and (max-width: 992px)  {
+
+  .album__item {
+    flex-basis: calc((100% / 4) - 20px);
   }
   #made-for__flex {
     flex-wrap: nowrap;
   }
 
-}
+} */
