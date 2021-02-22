@@ -247,6 +247,24 @@ aside {
   text-align: center;
 }
 
+.box__img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay:hover {
+  display: block;
+}
 #made-for__flex {
   justify-content: flex-start;
 
@@ -519,6 +537,10 @@ footer {
   }
   #made-for__flex {
     flex-wrap: nowrap;
+  }
+
+  .progress__bar {
+    width: 230px;
   }
 }
 
