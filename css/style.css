@@ -53,7 +53,7 @@ aside {
   padding-left: 20px;
 }
 
-.first-nav li {
+.first-nav a {
   display: flex;
   padding-bottom: 10px;
 }
@@ -77,13 +77,22 @@ aside {
   align-items: center;
   margin: 20px 0 ;
 }
+.new__playlist a {
 
+}
 .btn {
   width: 40px;
   height: 40px;
-  font-size: 30px;
+  font-size: 20px;
   margin-right: 10px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  padding-top: 8px;
 }
+
+
 
 .container-playlist li{
   padding-top: 10px;
@@ -105,23 +114,29 @@ aside {
   margin-left: 20px;
 }
 
-.profile a {
+.profile button {
   padding-bottom: 10px;
-  border-bottom: 1px solid #717171;
-  width: 90%;
+  border: none;
+  height: 18px;
+  background-color: transparent;
+  width: 56%;
   color: #717171;
   font-weight: 700;
   display: block;
   font-size: 12px;
 }
+.profile button:focus {
+  outline: none;
+  box-shadow: none;
+}
 
-.profile a i {
+.profile button i {
   display: inline-block;
   margin-right: 10px;
   padding: 2px;
   border: 1px solid #717171;
   border-radius: 50%;
-  font-size: 7px;
+  font-size: 10px;
   vertical-align: middle;
 }
 
@@ -130,6 +145,9 @@ aside {
   display: flex;
   margin: 10px 0;
   align-items: center;
+  border-top: 1px solid #717171;
+  padding-top: 10px;
+  margin-right: 10px;
 
 }
 
@@ -366,7 +384,7 @@ footer {
 
 
 .controls-container {
-  flex-basis: 21%;
+  flex-basis: 11%;
   display: flex;
   align-items: center;
 }
@@ -397,6 +415,7 @@ footer {
   top:0;
   left: 0;
 }
+
 /*responsive*/
 
 @media screen and (max-width: 575px)  {
@@ -431,9 +450,14 @@ footer {
     position: absolute;
     bottom: 25px;
   }
-  .profile a {
+  .profile__account {
     border: none;
     margin-left: 2px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .profile button {
+    margin: auto;
   }
 
   /* responsive upgrade */
@@ -452,6 +476,7 @@ footer {
 
   .album__item {
     flex-basis: calc((100% / 2) - 20px);
+    margin-bottom: 20px;
   }
   #made-for__flex {
     flex-wrap: nowrap;
@@ -478,6 +503,9 @@ footer {
   .reproducing-container .track__name p {
     display: inline-block;
     margin: 5px 0;
+  }
+  .progress__bar {
+    width: 200px;
   }
 }
 
