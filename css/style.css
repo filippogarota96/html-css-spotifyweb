@@ -11,7 +11,7 @@ body {
 }
 
 main {
-  height: calc(100% - 80px);
+  height: calc(100% - 72px);
   display: flex;
   position: relative;
 }
@@ -247,7 +247,6 @@ aside {
 
 footer {
   background-color: #282828;
-  height: 80px;
   width: 100%;
   position:fixed;
   bottom: 0;
@@ -267,6 +266,11 @@ footer {
 .track__items {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.track__wrap {
+  flex-wrap: wrap;
 }
 .track-container img {
   width: 50px;
@@ -290,6 +294,7 @@ footer {
 
 .reproducing-container {
   flex-basis: 40%;
+  margin: 0 1%;
 }
 .reproducing__commands {
   display: flex;
@@ -353,6 +358,13 @@ footer {
   border-radius: 50%;
 }
 
+.reproducing-container .track__name,
+.reproducing-container .track__name h5,
+.reproducing-container .track__name p {
+  display: none;
+}
+
+
 .controls-container {
   flex-basis: 21%;
   display: flex;
@@ -395,6 +407,7 @@ footer {
     width: 80px;
     position: relative;
     text-align: center;
+
   }
   .logo img {
     display: none;
@@ -416,7 +429,7 @@ footer {
 
   .profile {
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
   }
   .profile a {
     border: none;
@@ -443,7 +456,31 @@ footer {
   #made-for__flex {
     flex-wrap: nowrap;
   }
+  /* resoponsive footer */
+
+  footer {
+    justify-content: center;
+    align-items: content: '';
+  }
+  .track__items a,
+  .track__items h5,
+  .track__items p,
+  .controls-container {
+    display: none;
+  }
+  .reproducing-container .track__name {
+    display: block;
+  }
+  .track__name {
+    text-align: center;
+  }
+  .reproducing-container .track__name h5,
+  .reproducing-container .track__name p {
+    display: inline-block;
+    margin: 5px 0;
+  }
 }
+
 
 
 
