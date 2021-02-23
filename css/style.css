@@ -237,7 +237,7 @@ aside a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 70px;
+  
 }
 
 .container__nav li  {
@@ -597,7 +597,6 @@ footer button:hover {
   .container__nav {
     margin-left: 10px;
   }
-
   .album__item {
     flex-basis: calc((100% / 2) - 20px);
     margin-bottom: 20px;
