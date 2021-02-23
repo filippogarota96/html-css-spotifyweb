@@ -106,8 +106,12 @@ aside {
   justify-content: center;
   align-items: center;
 }
-.new__playlist a:hover {
-  color: #fff;
+
+aside a, aside button {
+  transition: color 0.2s;
+}
+aside a:hover {
+  color:#fff;
 }
 
 .new__playlist a:hover::before {
@@ -203,6 +207,7 @@ aside {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
 }
 
 .upgrade__btn a {
@@ -214,8 +219,12 @@ aside {
   border-radius: 40px;
   background-color: transparent;
   display: inline-block;
-}
+  transition: all .2s ease-in-out;
 
+}
+.upgrade__btn a:hover {
+  transform: scale(1.1);
+}
 /*stile layout del main */
 .container {
   color: #fff;
@@ -224,13 +233,11 @@ aside {
   padding-top: 80px;
 }
 
-.container__margin {
-  margin-left: 10px;
-}
 .container__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 70px;
 }
 
 .container__nav li  {
@@ -240,6 +247,7 @@ aside {
 
 .container ul  {
   text-align: center;
+  height: 100%;
 }
 .container__nav a {
   color: #75777C;
@@ -247,6 +255,23 @@ aside {
   font-size: 14px;
   font-weight: 600;
 }
+
+.container__nav  li a::after {
+  content: '';
+  width: 25px;
+  height: 3px;
+  background-color: #ADFF2F;
+  display: block;
+  margin:auto;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+
+.container__nav  li a:hover::after {
+  opacity: 1;
+}
+
 
 .container__recently {
   margin: 40px 20px;
@@ -298,6 +323,7 @@ aside {
   bottom: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s;
 }
 .overlay i {
   font-size: 40px;
@@ -333,9 +359,20 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+footer button:focus {
+  outline: none;
+  box-shadow: none;
+}
+footer button {
+  transition: color 0.2s;
+}
 
+footer button:hover {
+  color: #fff;
+}
+/* footer track name */
 .track-container {
-  flex-basis: 15%;
+  flex-basis: 20%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -354,12 +391,14 @@ footer {
 .track-container img {
   width: 50px;
 }
-.track-container i {
+.track-container button {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 2px;
   color: #848484;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
 }
-
 .track__name {
   margin: 0 10px;
   line-height: 10px;
@@ -369,7 +408,12 @@ footer {
 }
 .track__name p {
   color: #848484;
+  transition: text-decoration 0.2;
 }
+.track__name p:hover {
+  text-decoration: underline;
+}
+/* /footer track name */
 
 .reproducing-container {
   flex-basis: 40%;
@@ -567,7 +611,7 @@ footer {
     justify-content: center;
     align-items: content: '';
   }
-  .track__items a,
+  .track__items button,
   .track__items h5,
   .track__items p,
   .controls-container {
