@@ -68,15 +68,14 @@ aside {
 }
 
 .first-nav li .icon {
-  max-width: 27px;
+  width: 27px;
   margin-right: 5px;
 }
-.first-nav li svg:hover {
-  fill:#fff;
-}
 
-.first-nav li:hover .first-nav li p {
+.first-nav ul li:hover p,
+.first-nav ul li:hover .icon *  {
   color: #fff;
+  fill: #fff;
 }
 
 .container-playlist h3 {
@@ -160,18 +159,11 @@ aside {
   outline: none;
   box-shadow: none;
 }
-
-.profile button i {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 2px;
-  border: 1px solid #717171;
-  border-radius: 50%;
-  font-size: 10px;
-  vertical-align: middle;
+.profile button:hover .icon *,
+.profile button:hover span {
+  color: #fff;
+  fill: #fff;
 }
-
-
 .profile__account {
   display: flex;
   margin: 10px 0;
