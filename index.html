@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
   <link rel="stylesheet" href="css/style.css">
   <title>My Spotify</title>
 </head>
 <body>
+  <!-- navbar dell'upgrade -->
   <div class="upgrade">
     <div class="upgrade__btn">
       <a href="">EFFETTUA L'UPGRADE</a>
     </div>
   </div>
+  <!-- /navbar dell'upgrade -->
+
   <main>
     <!-- barra dell'aside -->
     <aside>
@@ -37,39 +41,39 @@
               <a href=""><svg class="icon"viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="#D2D2D2"/></svg>
                 <p>La tua libreria</p></a>
               </li>
-            </ul>
-          </nav>
-          <nav class="container-playlist">
-            <h3>Playlist</h3>
-            <div class="new__playlist">
-              <a href="">Crea Playlist</a>
-            </div>
-            <div class="playlist__scroll">
-              <ul>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
-                <li><a href="">Nome Playlist</a></li>
+        </ul>
+      </nav>
+      <nav class="container-playlist">
+        <h3>Playlist</h3>
+          <div class="new__playlist">
+            <a href="">Crea Playlist</a>
+          </div>
+          <div class="playlist__scroll">
+            <ul>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
+              <li><a href="">Nome Playlist</a></li>
               </ul>
+          </div>
+      </nav>
+        <div class="profile">
+          <button><svg class="icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#A3A3A3" fill-rule="evenodd"/></svg><span>Installa app</span></button>
+          <div class="profile__account">
+            <div class="account--image">
+              <img src="img/profile.svg" alt="">
             </div>
-          </nav>
-          <div class="profile">
-            <button><svg class="icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Download icon</title><path d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z" fill="#A3A3A3" fill-rule="evenodd"/></svg><span>Installa app</span></button>
-            <div class="profile__account">
-              <div class="account--image">
-                <img src="img/profile.svg" alt="">
-              </div>
               <h4>Filippo Garota</h4>
             </div>
-          </div>
-        </aside>
+        </div>
+      </aside>
         <!-- /barra dell'aside -->
-
+        <!-- container principale del main -->
         <div class="container">
-          <!-- navbar dell'upgrade -->
+          <!-- nav del main -->
           <nav class=" container__margin container__nav">
             <ul>
               <li><a href="">In evidenza</a></li>
@@ -80,6 +84,7 @@
               <li><a href="">Scopri</a></li>
             </ul>
           </nav>
+          <!-- album con flex -->
           <div class=" container__margin container__recently">
             <h2>Recently Played</h2>
             <div class="album__container">
@@ -133,6 +138,7 @@
               </div>
 
             </div>
+          <!-- playlist create per  -->
             <div class=" suggests made-for">
               <h2>Creato per Filippo Garota</h2>
               <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -153,7 +159,7 @@
                 </div>
               </div>
             </div>
-
+          <!-- Artisti popolari -->
             <div class=" suggests popular-artits">
               <h2>Artisti più popolari</h2>
               <p>Più ascolti, più accurati saranno i suggerimenti.</p>
@@ -176,9 +182,10 @@
             </div>
           </div>
         </div>
-
+        <!-- container principale del main -->
       </main>
       <footer>
+        <!-- blocco di sinistra del footer -->
         <div class="track-container">
           <div class="track__items">
             <img src="img/ram.jpg" alt="">
@@ -189,33 +196,35 @@
           </div>
           <div class="track__items track__wrap">
             <button><i class="far fa-heart"></i><button>
-            <button><i class="far fa-folder"></i></button>
+              <button><i class="far fa-folder"></i></button>
+            </div>
           </div>
-        </div>
-        <div class="reproducing-container">
-          <div class="reproducing__commands">
-            <button type="button" class="footer--btn" name="button"><i class="fas fa-random"></i></button>
-            <button type="button" class="footer--btn" name="button"><i class="fas fa-caret-left"></i></i></button>
-            <button type="button" class="footer--btn" name="button"><i class="far fa-play-circle"></i></button>
-            <button type="button" class="footer--btn" name="button"><i class="fas fa-caret-right"></i></i></button>
-            <button type="button" class="footer--btn" name="button"><i class="fas fa-undo"></i></button>
+          <!-- blocco centrale del footer -->
+          <div class="reproducing-container">
+            <div class="reproducing__commands">
+              <button type="button" class="footer--btn" name="button"><i class="fas fa-random"></i></button>
+              <button type="button" class="footer--btn" name="button"><i class="fas fa-caret-left"></i></i></button>
+              <button type="button" class="footer--btn" name="button"><i class="far fa-play-circle"></i></button>
+              <button type="button" class="footer--btn" name="button"><i class="fas fa-caret-right"></i></i></button>
+              <button type="button" class="footer--btn" name="button"><i class="fas fa-undo"></i></button>
+            </div>
+            <div class="progress">
+              <small>0.25</small>
+              <div class="progress__bar"></div>
+              <small>3.29</small>
+            </div>
+            <div class="track__name">
+              <h5>Daft Punk</h5>
+              <p>Giorgio by Moroder</p>
+            </div>
           </div>
-          <div class="progress">
-            <small>0.25</small>
-            <div class="progress__bar"></div>
-            <small>3.29</small>
+          <!-- blocco di destra del footer -->
+          <div class="controls-container">
+            <button type="button" class="controls--btn" name="button"><i class="fas fa-bars"></i></button>
+            <button type="button" class="controls--btn" name="button"><i class="fas fa-desktop"></i></button>
+            <button type="button" class="controls--btn" name="button"><i class="fas fa-volume-up"></i></button>
+            <div class="volume__bar"></div>
           </div>
-          <div class="track__name">
-            <h5>Sinister</h5>
-            <p>track name</p>
-          </div>
-        </div>
-        <div class="controls-container">
-          <button type="button" class="controls--btn" name="button"><i class="fas fa-bars"></i></button>
-          <button type="button" class="controls--btn" name="button"><i class="fas fa-desktop"></i></button>
-          <button type="button" class="controls--btn" name="button"><i class="fas fa-volume-up"></i></button>
-          <div class="volume__bar"></div>
-        </div>
-      </footer>
-    </body>
-    </html>
+        </footer>
+      </body>
+      </html>

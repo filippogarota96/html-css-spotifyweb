@@ -232,12 +232,12 @@ aside a:hover {
   overflow: auto;
   padding-top: 80px;
 }
-
+/* stile della nav del container */
 .container__nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 
 .container__nav li  {
@@ -267,12 +267,13 @@ aside a:hover {
   opacity: 0;
 }
 
-
 .container__nav  li a:hover::after {
   opacity: 1;
 }
 
+/* /stile della nav del container */
 
+/* Stile degli album con flex */
 .container__recently {
   margin: 40px 20px;
 }
@@ -334,6 +335,7 @@ aside a:hover {
 #made-for__flex {
   justify-content: flex-start;
 }
+/* Stile degli album con flex */
 
 .made-for__item .box__img {
   border-radius: 50%;
@@ -370,7 +372,7 @@ footer button {
 footer button:hover {
   color: #fff;
 }
-/* footer track name */
+/* stile del blocco di sinistra del footer */
 .track-container {
   flex-basis: 20%;
   display: flex;
@@ -415,6 +417,7 @@ footer button:hover {
 }
 /* /footer track name */
 
+/* stile blocco centrale del footer */
 .reproducing-container {
   flex-basis: 40%;
   margin: 0 1%;
@@ -468,12 +471,14 @@ footer button:hover {
   position: absolute;
   top:0;
   left: 0;
+  transition: all 0.2s;
+
 }
 
 .progress__bar:hover::before, .volume__bar:hover::before {
   background-color: #1DB954;
 }
-.progress__bar:hover::after{
+.progress__bar::after{
   content: '';
   width: 10px;
   height: 10px;
@@ -482,15 +487,19 @@ footer button:hover {
   position: absolute;
   top: -2px;
   left: 20%;
+  transition: all 0.5s;
+  opacity:0;
 }
-
+.progress__bar:hover::after, .progress__bar:hover::before {
+  opacity: 1
+}
 .reproducing-container .track__name,
 .reproducing-container .track__name h5,
 .reproducing-container .track__name p {
   display: none;
 }
 
-
+/* stile del blocco di destra del footer */
 .controls-container {
   flex-basis: 11%;
   display: flex;
@@ -522,6 +531,7 @@ footer button:hover {
   position: absolute;
   top:0;
   left: 0;
+  transition: all 0.2s;
 }
 .volume__bar:hover::after {
   content: '';
@@ -532,6 +542,7 @@ footer button:hover {
   position: absolute;
   top: -2px;
   left: 20%;
+  opacity: 1;
 }
 /*responsive*/
 
