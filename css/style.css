@@ -135,6 +135,7 @@ aside {
 
 .profile {
   margin-left: 20px;
+  margin-top: auto;
 }
 
 .profile button {
@@ -237,6 +238,9 @@ aside {
   padding: 20px 10px;
 }
 
+.container ul  {
+  text-align: center;
+}
 .container__nav a {
   color: #75777C;
   text-transform: uppercase;
@@ -506,8 +510,9 @@ footer {
     margin: none;
   }
   .first-nav ul {
-    padding-left: 25px;
+    padding-left: 4px;
   }
+
   aside p,
   .container-playlist,
   .profile span,
@@ -518,15 +523,21 @@ footer {
   .profile {
     position: absolute;
     bottom: 25px;
+    margin-left: 9px;
   }
   .profile__account {
     border: none;
     margin-left: 2px;
-    margin: auto;
     margin-bottom: 10px;
+    width: 100%;
   }
   .profile button {
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .account--image {
+    margin-left: 11px;
   }
 
   /* responsive upgrade */
