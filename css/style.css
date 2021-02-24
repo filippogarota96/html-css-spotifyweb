@@ -669,4 +669,14 @@ footer button:hover {
     flex-wrap: nowrap;
   }
 
-  } */
+  }
+
+  @media screen and (max-height: 360px) {
+    .upgrade {
+      display: none;
+    }
+
+    .container {
+      padding-top: 0;
+    }
+  }
